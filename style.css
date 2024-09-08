@@ -1,0 +1,552 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header .logo {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: 5px;
+}
+
+.logo > h1 {
+  color: skyblue;
+  font-weight: bolder;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1px;
+}
+
+.logo > p {
+  font-size: 1.5rem;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: skyblue;
+  text-decoration: underline;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-icons a {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-icons .bx {
+  font-family: "Boxicons";
+  font-size: 2rem;
+}
+
+.menu {
+  display: none;
+}
+
+#hero {
+  background: url("assets/gadgets\ bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 500px;
+  color: #fff;
+  text-align: center;
+  padding-top: 150px;
+}
+
+#hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 1.5rem;
+}
+
+#hero .btn {
+  padding: 10px 20px;
+  background: skyblue;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#hero .btn:hover {
+  background-color: #1f45ac;
+}
+
+#featured-products {
+  margin: 40px 0;
+}
+
+#featured-products h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.featured-products h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 20px;
+}
+
+.products-grid {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.product-card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.product-card .btn {
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#categories {
+  margin: 40px 0;
+}
+
+#categories h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.categories-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-card {
+  width: 100%;
+  text-align: center;
+}
+
+.category-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.category-card h3 {
+  margin-top: 10px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .logo {
+  display: flex;
+  font-size: 1rem;
+  gap: 5px;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .footer-links {
+  list-style: none;
+}
+
+footer .footer-links li {
+  display: inline;
+  margin-right: 15px;
+}
+
+footer .footer-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .social-media a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.social-media a {
+  font-size: 1.3rem;
+}
+
+.bxl-facebook {
+  color: #3b5998;
+}
+
+.bxl-instagram {
+  color: #c13584;
+}
+
+.bxl-twitter {
+  color: #1da1f2;
+}
+
+.bxl-whatsapp {
+  color: #25d366;
+}
+
+/* arrivals */
+.arrivals-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.arrivals-container h1 {
+  text-shadow: 3px 5px 10px;
+}
+
+.arrivals-container h1 {
+  margin-bottom: 20px;
+  height: 500px;
+  background: url(assets/airpods-max.jpg);
+  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.products {
+display: inline-grid;
+grid-template-columns: repeat(3, 1fr);
+align-items: center;
+justify-items: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+}
+
+.product img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.product img:hover {
+  transform: scale(1.05);
+}
+
+.product button {
+  padding: 7px 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  &:hover {
+    background-color: #1f45ac;
+  }
+}
+
+.best-sellers {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.best-sellers h1 {
+  font-size: 2.5rem;
+}
+
+#best-sellers #featured-products {
+  border-radius: 47% 53% 60% 40% / 48% 43% 57% 52%;
+  background: linear-gradient(to right, #333, #fff);
+  padding: 30px;
+}
+
+#best-sellers h2 {
+  font-size: 1rem;
+}
+
+#best-sellers img {
+  border-radius: 47% 53% 60% 40% / 48% 43% 57% 52%;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1f45ac;
+}
+
+#menu {
+  cursor: pointer;
+  font-size: 2rem;
+  display: none;
+}
+
+
+
+
+/* media query */
+
+@media screen and (max-width: 768px) {
+  .container1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #dropdown-content {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+    font-size: 2rem;
+  }
+
+  #dropdown {
+    position: absolute;
+    display: block;
+    right: 0px;
+    top: 95px;
+    background: #333;
+    padding: 40px;
+    width: 250px;
+    /* margin-right: 10px; */
+  }
+
+  #dropdown li{
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #dropdown li:hover {
+    background-color: #1da1f2;
+    color: #fff;
+  }
+
+  #dropdown li a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #hero {
+    background-size: cover;
+  }
+
+  #hero h2 {
+    font-size: 2rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+
+  #featured-products h2 {
+    font-size: 1rem;
+  }
+
+  #featured-products p {
+    font-size: 0.8rem;
+  }
+
+  #featured-products {
+    background-color: #fff;
+  }
+
+  #container > h2{
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+
+  .products-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .product-card {
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+
+  .product-card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  #categories h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+
+  .categories-grid {
+    display: block;
+    padding: 10px;
+  }
+
+  .category-card img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    text-align: center;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px;
+  }
+
+  .arrivals-container > h1{
+    text-decoration: underline;
+  }
+
+  .best-sellers h1{
+    text-decoration: underline;
+    font-size: 2rem;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-links {
+    font-size: 0.8rem;
+  }
+
+  footer p {
+    font-size: 0.5rem;
+  }
+}
